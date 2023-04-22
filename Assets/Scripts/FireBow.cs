@@ -11,10 +11,13 @@ public class FireBow : MonoBehaviour
     [SerializeField] private GameObject arrowSpawnPoint;
     [SerializeField] public Animator bowAnimation;
     [SerializeField] public GameObject fakeArrow;
+    [SerializeField] public Transform fingerTransform;
 
     public float fireRate = 0.5f;
     public GameObject arrowPrefab;
     public float arrowForce = .1f;
+    
+    
 
 
     public void OnButtonSmash()
@@ -49,5 +52,17 @@ public class FireBow : MonoBehaviour
     {
         fakeArrow.SetActive(true);
     }
-    
+
+    public void FingerGun()
+        // When the second finger (NearInteractionModeDetector) does this transform, shoot
+    {
+        /*if (transform.rotation.x > 50 && transform.rotation.x < 100 
+                                      && transform.rotation.y > 50 && transform.rotation.y < 100 
+                                      && transform.rotation.z > 50 && transform.rotation.z < 100) */
+            if(fingerTransform.rotation.x > 70)
+        {
+            Invoke("OnButtonSmash", 1f);
+            Debug.Log("It worked");
+        }
+    }
 }

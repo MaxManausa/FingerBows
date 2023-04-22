@@ -1637,6 +1637,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &448935199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 464265811, guid: d03c4353fda446d4f8df56d422578d64, type: 3}
+  m_PrefabInstance: {fileID: 845820833}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &508411126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1670,7 +1675,7 @@ Transform:
   - {fileID: 523594774}
   - {fileID: 154859184}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &523594769
 GameObject:
@@ -2011,13 +2016,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526354597}
-  m_LocalRotation: {x: -0.65305454, y: 0.5825055, z: 0.37946433, w: 0.30035642}
-  m_LocalPosition: {x: 0.065648824, y: -0.108, z: -0.064719446}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalRotation: {x: -0.53060937, y: 0.43932503, z: 0.5387944, w: 0.48492053}
+  m_LocalPosition: {x: 0.065648824, y: -0.050442044, z: 1.146}
+  m_LocalScale: {x: 0.50000006, y: 0.5000001, z: 0.50000006}
   m_Children:
   - {fileID: 1688537358}
-  m_Father: {fileID: 1127502627}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 236.551, y: 15.328003, z: -284.816}
 --- !u!1 &539650793
 GameObject:
@@ -3777,6 +3782,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 526354598}
     m_Modifications:
+    - target: {fileID: 1688537359, guid: d03c4353fda446d4f8df56d422578d64, type: 3}
+      propertyPath: fingerTransform
+      value: 
+      objectReference: {fileID: 8059422793999979696}
     - target: {fileID: 1717406733745140, guid: d03c4353fda446d4f8df56d422578d64, type: 3}
       propertyPath: m_Name
       value: Wooden Bow
@@ -4265,13 +4274,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127502626}
   m_LocalRotation: {x: 0.30445015, y: -0, z: -0, w: 0.9525283}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1733015855}
-  - {fileID: 526354598}
-  m_Father: {fileID: 8059422793999979696}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 35.45, y: 0, z: 0}
 --- !u!1 &1128699966
 GameObject:
@@ -4849,6 +4857,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1411104090 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3877828350782364881, guid: d03c4353fda446d4f8df56d422578d64, type: 3}
+  m_PrefabInstance: {fileID: 845820833}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1428414288
 GameObject:
   m_ObjectHideFlags: 0
@@ -6167,7 +6180,7 @@ Transform:
   - {fileID: 1606485127}
   - {fileID: 1569782177}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1976944393
 GameObject:
@@ -8173,7 +8186,7 @@ Transform:
   - {fileID: 7609097064366006758}
   - {fileID: 6448619844662654714}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2351505567914652586
 Transform:
@@ -11282,8 +11295,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1127502627}
+  m_Children: []
   m_Father: {fileID: 5727148872752966956}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11316,6 +11328,7 @@ GameObject:
   - component: {fileID: 8059422793999979698}
   - component: {fileID: 1004335057730838885}
   - component: {fileID: 4538644743918799774}
+  - component: {fileID: 8059422793999979712}
   m_Layer: 0
   m_Name: NearInteractionModeDetector
   m_TagString: Untagged
@@ -11323,6 +11336,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8059422793999979712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8059422793999979711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944ab81976115064499f83201d9804a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowSpawnPoint: {fileID: 448935199}
+  bowAnimation: {fileID: 1688537357}
+  fakeArrow: {fileID: 1411104090}
+  fingerTransform: {fileID: 8059422793999979696}
+  fireRate: 0.5
+  arrowPrefab: {fileID: 1411104090}
+  arrowForce: 0.1
 --- !u!1 &8059422795477499278
 GameObject:
   m_ObjectHideFlags: 0
