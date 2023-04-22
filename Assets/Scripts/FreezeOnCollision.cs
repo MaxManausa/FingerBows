@@ -7,6 +7,7 @@ public class FreezeOnCollision : MonoBehaviour
     private void Start()
     {
         arrowRigidbody = GetComponent<Rigidbody>();
+        arrowRigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -17,6 +17,9 @@ public class HitTarget : MonoBehaviour
         {
             targetRigidbody.GetComponent<Renderer>().material = hitMaterial;
             Debug.Log("the target was hit!");
+            targetRigidbody.isKinematic = false;
+            targetRigidbody.useGravity = true;
+            Destroy(targetRigidbody.gameObject, 5f);
         }
     }
 }
