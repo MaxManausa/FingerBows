@@ -22,6 +22,7 @@ public class FireBow : MonoBehaviour
         DrawBack();
         Invoke("ShootArrow",.4f);
         Invoke("ReenableArrow",.8f);
+        
     }
 
     public void DrawBack()
@@ -39,6 +40,7 @@ public class FireBow : MonoBehaviour
         GameObject arrow = Instantiate(arrowPrefab, arrowSpawnPos.position, arrowSpawnPos.rotation);
         Rigidbody arrowRb = arrow.GetComponent<Rigidbody>();
         arrowRb.AddForce(arrowSpawnPos.forward * arrowForce, ForceMode.Impulse);
+        Destroy(arrow, 4f);
         Debug.Log("hi!!!!!!!");
     }
 
@@ -46,4 +48,5 @@ public class FireBow : MonoBehaviour
     {
         fakeArrow.SetActive(true);
     }
+    
 }
