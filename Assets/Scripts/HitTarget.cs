@@ -1,0 +1,22 @@
+using System.Runtime.CompilerServices;
+using UnityEngine;
+
+public class HitTarget : MonoBehaviour
+{
+    private Rigidbody targetRigidbody;
+
+    [SerializeField] private Material hitMaterial;    
+    private void Start()
+    {
+        targetRigidbody = GetComponent<Rigidbody>();
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Arrow"))
+        {
+            targetRigidbody.GetComponent<Renderer>().material = hitMaterial;
+            Debug.Log("the target was hit!");
+        }
+    }
+}
