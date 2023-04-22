@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3643900092272586092}
   - component: {fileID: 3521335155878830114}
   - component: {fileID: 4016624424043110772}
+  - component: {fileID: 1615946328376661845}
   m_Layer: 0
   m_Name: ArrowHusk
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,8 +62,20 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.01653862, y: 0.01439955, z: 0.03314974}
-  m_Center: {x: 0.00068950653, y: 0.0012573604, z: 0.06427616}
+  m_Size: {x: 0.0057468414, y: 0.0045530787, z: 0.010556695}
+  m_Center: {x: 0.000579834, y: 0.0009296398, z: 0.055658504}
+--- !u!114 &1615946328376661845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3877828349704836405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 595884000cbf06246907e2b46db88e81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8990086961112826248
 GameObject:
   m_ObjectHideFlags: 0
