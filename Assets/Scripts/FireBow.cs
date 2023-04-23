@@ -49,10 +49,12 @@ public class FireBow : MonoBehaviour
 
         GameObject arrow = Instantiate(arrowPrefab, arrowSpawnPos.position, arrowSpawnPos.rotation);
         arrow.tag = "Arrow";
+        
+        int arrowsfired = +1 ; 
         Rigidbody arrowRb = arrow.GetComponent<Rigidbody>();
         arrowRb.AddForce(arrowSpawnPos.forward * arrowForce, ForceMode.Impulse);
         Destroy(arrow, 4f);
-        Debug.Log("hi!!!!!!!");
+        Debug.Log("arrow fired. You shot an arrow " + arrowsfired +" times. Nice.");
     }
 
     public void RenewArrow()
