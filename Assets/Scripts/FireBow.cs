@@ -59,7 +59,7 @@ public class FireBow : MonoBehaviour
         /*if (transform.rotation.x > 50 && transform.rotation.x < 100 
                                       && transform.rotation.y > 50 && transform.rotation.y < 100 
                                       && transform.rotation.z > 50 && transform.rotation.z < 100) */
-            if(fingerTransform.rotation.x > 70)
+            if(fingerTransform.position.y < 0)
         {
             Invoke("OnButtonSmash", 1f);
             Debug.Log("It worked");
