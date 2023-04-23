@@ -1,6 +1,7 @@
 using Microsoft.MixedReality.Toolkit.Subsystems;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -15,8 +16,6 @@ public class FireBow : MonoBehaviour
     public float fireRate = 0.5f;
     public GameObject arrowPrefab;
     public float arrowForce = .1f;
-    
-    
 
 
     public void OnButtonSmash()
@@ -24,7 +23,16 @@ public class FireBow : MonoBehaviour
         DrawBack();
         Invoke("ShootArrow",.4f);
         Invoke("RenewArrow",.8f);
-        
+    }
+
+    public void UnlimitedArrowLaunch()
+    {
+        float i = 1f;
+        Invoke("OnButtonSmash", i);
+        Invoke("OnButtonSmash", i += 1);
+        Invoke("OnButtonSmash", i += 1);
+        Invoke("OnButtonSmash", i += 1);
+        Invoke("OnButtonSmash", i += 1);
     }
 
     public void DrawBack()
