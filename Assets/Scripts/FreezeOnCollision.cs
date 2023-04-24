@@ -14,9 +14,11 @@ public class FreezeOnCollision : MonoBehaviour
     {
         if (collision.rigidbody.CompareTag("Target") ==collision.gameObject.GetComponent<Rigidbody>())
         {
-                arrowRigidbody.isKinematic = true;
-                arrowRigidbody.constraints = RigidbodyConstraints.FreezeAll;
-                Debug.Log("arrow collided with" + name);
+                
+            transform.SetParent(collision.transform);
+            arrowRigidbody.isKinematic = true; 
+            arrowRigidbody.constraints = RigidbodyConstraints.FreezeAll;
+            Debug.Log("arrow collided with" + name);
         }
         else
         {

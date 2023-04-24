@@ -2,6 +2,7 @@ using Microsoft.MixedReality.Toolkit.Subsystems;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,11 +13,13 @@ public class FireBow : MonoBehaviour
     [SerializeField] private GameObject arrowSpawnPoint;
     [SerializeField] public Animator bowAnimation;
     [SerializeField] public GameObject fakeArrow;
+    [SerializeField] public TMP_Text numArrowsFired;
 
     public float fireRate = 0.5f;
     public GameObject arrowPrefab;
     public float arrowForce = .1f;
 
+    public int arrowsfired = 0;
 
     public void OnButtonSmash()
     {
@@ -49,8 +52,9 @@ public class FireBow : MonoBehaviour
 
         GameObject arrow = Instantiate(arrowPrefab, arrowSpawnPos.position, arrowSpawnPos.rotation);
         arrow.tag = "Arrow";
-        
-        int arrowsfired = +1 ; 
+
+        arrowsfired = arrowsfired + 1;
+        numArrowsFired.text = "Arrows Fired: " + arrowsfired.ToString();
         Rigidbody arrowRb = arrow.GetComponent<Rigidbody>();
         arrowRb.AddForce(arrowSpawnPos.forward * arrowForce, ForceMode.Impulse);
         Destroy(arrow, 4f);
