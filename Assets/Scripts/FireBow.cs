@@ -1,7 +1,6 @@
 using Microsoft.MixedReality.Toolkit.Subsystems;
 using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,25 +12,27 @@ public class FireBow : MonoBehaviour
     [SerializeField] private GameObject arrowSpawnPoint;
     [SerializeField] public Animator bowAnimation;
     [SerializeField] public GameObject fakeArrow;
-    [SerializeField] public TMP_Text numArrowsFired;
+    [SerializeField] public TMP_Text numberOfArrowsFired;
 
     public float fireRate = 0.5f;
     public GameObject arrowPrefab;
     public float arrowForce = .1f;
+    
 
-    public int arrowsfired = 0;
+    public int arrowsFired;
 
+    
     public void OnButtonSmash()
     {
-        Invoke("DrawBack",.1f);
+        DrawBack();
         Invoke("ShootArrow",.4f);
-        Invoke("RenewArrow",.8f);
+        Invoke("ReenableArrow",.8f);
     }
 
-    public void UnlimitedArrowLaunch()
+    public void FiveShots()
     {
-        float i = 1f;
-        Invoke("OnButtonSmash", i);
+        int i = 0;
+        Invoke("OnButtonSmash", i += 1);
         Invoke("OnButtonSmash", i += 1);
         Invoke("OnButtonSmash", i += 1);
         Invoke("OnButtonSmash", i += 1);
@@ -51,17 +52,15 @@ public class FireBow : MonoBehaviour
         Transform arrowSpawnPos = arrowSpawnPoint.transform;
 
         GameObject arrow = Instantiate(arrowPrefab, arrowSpawnPos.position, arrowSpawnPos.rotation);
-        arrow.tag = "Arrow";
-
-        arrowsfired = arrowsfired + 1;
-        numArrowsFired.text = "Arrows Fired: " + arrowsfired.ToString();
         Rigidbody arrowRb = arrow.GetComponent<Rigidbody>();
         arrowRb.AddForce(arrowSpawnPos.forward * arrowForce, ForceMode.Impulse);
-        Destroy(arrow, 4f);
-        Debug.Log("arrow fired. You shot an arrow " + arrowsfired +" times. Nice.");
+        arrowsFired = arrowsFired + 1;
+        numberOfArrowsFired.text = ("Arrows Fired: " + arrowsFired);
+        Destroy(arrow, 5f);
+        Debug.Log("hi!!!!!!!");
     }
 
-    public void RenewArrow()
+    public void ReenableArrow()
     {
         fakeArrow.SetActive(true);
     }
