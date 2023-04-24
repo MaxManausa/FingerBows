@@ -23,7 +23,7 @@ public class FireBow : MonoBehaviour
 
     public void OnButtonSmash()
     {
-        DrawBack();
+        Invoke("DrawBack",.1f);
         Invoke("ShootArrow",.4f);
         Invoke("RenewArrow",.8f);
     }
