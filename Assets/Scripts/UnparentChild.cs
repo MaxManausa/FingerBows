@@ -5,17 +5,14 @@ using UnityEngine;
 
 public class UnparentChild : MonoBehaviour
 {
-    [SerializeField] private Transform child;
+    [SerializeField] private List<Transform> children;
 
-    private void Start()
-    {
-        //Give it a second to set
-        Invoke("Adoption",3f);
-    }
-
-    private void Adoption()
+    public void Adoption()
     {
         // Unparent the child object
-        child.SetParent(null);
+        foreach (var child in children)
+        {
+            child.SetParent(null);
+        }
     }
 }
