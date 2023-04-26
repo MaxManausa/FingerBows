@@ -10256,7 +10256,7 @@ GameObject:
   - component: {fileID: 1258612228465554186}
   - component: {fileID: 6031170183421495305}
   m_Layer: 0
-  m_Name: LevelZombieButton
+  m_Name: LevelZButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15808,7 +15808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6753144339389949062}
   m_Layer: 0
-  m_Name: LevelZombie
+  m_Name: LevelZ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
