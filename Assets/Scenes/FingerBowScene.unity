@@ -235,6 +235,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: MRTK XR Rig - FingerBow
       objectReference: {fileID: 0}
+    - target: {fileID: 8781761199302741999, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887084437454209691, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999905
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887084437454209691, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.004363274
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887084437454209691, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887084437454209691, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887084437454209691, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
 --- !u!1 &559037708
