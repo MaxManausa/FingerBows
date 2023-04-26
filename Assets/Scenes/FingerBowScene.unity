@@ -187,6 +187,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1431785519926776841, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2081259168920836419, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3015093414953199216, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -234,6 +242,26 @@ PrefabInstance:
     - target: {fileID: 3015093414953199218, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
       propertyPath: m_Name
       value: MRTK XR Rig - FingerBow
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092986806475632602, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3164983304105348951, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: m_Name
+      value: LevelZButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969989538322674371, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: m_Name
+      value: LevelZ
+      objectReference: {fileID: 0}
+    - target: {fileID: 6866975838876047944, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929299330652972536, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
