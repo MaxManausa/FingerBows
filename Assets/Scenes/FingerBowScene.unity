@@ -187,6 +187,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 416900780558206530, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowAudioSource
+      value: 
+      objectReference: {fileID: 1860041766}
+    - target: {fileID: 416900780558206530, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowHitTargetSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e1f29fd30cd5ec44a94fb39abfa74218, type: 3}
     - target: {fileID: 681726512237793532, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
       propertyPath: arrowAudioSource
       value: 
@@ -197,7 +205,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 010b5911819ae0a4aa767d2f814c2d2f, type: 3}
     - target: {fileID: 681726512667659166, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2045621399246760489, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
       propertyPath: arrowAudioSource
@@ -207,6 +215,14 @@ PrefabInstance:
       propertyPath: arrowWhooshSound
       value: 
       objectReference: {fileID: 8300000, guid: 010b5911819ae0a4aa767d2f814c2d2f, type: 3}
+    - target: {fileID: 2966404115397211251, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowAudioSource
+      value: 
+      objectReference: {fileID: 1860041766}
+    - target: {fileID: 2966404115397211251, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowHitTargetSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e1f29fd30cd5ec44a94fb39abfa74218, type: 3}
     - target: {fileID: 3015093414953199216, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -255,6 +271,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: MRTK XR Rig - FingerBow
       objectReference: {fileID: 0}
+    - target: {fileID: 3780857369785598550, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowAudioSource
+      value: 
+      objectReference: {fileID: 1860041766}
+    - target: {fileID: 3780857369785598550, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowHitTargetSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e1f29fd30cd5ec44a94fb39abfa74218, type: 3}
+    - target: {fileID: 4080096150550852726, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowAudioSource
+      value: 
+      objectReference: {fileID: 1860041766}
+    - target: {fileID: 4080096150550852726, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowHitTargetSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e1f29fd30cd5ec44a94fb39abfa74218, type: 3}
     - target: {fileID: 4586712102590810391, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
       propertyPath: arrowAudioSource
       value: 
@@ -263,6 +295,54 @@ PrefabInstance:
       propertyPath: arrowWhooshSound
       value: 
       objectReference: {fileID: 8300000, guid: 010b5911819ae0a4aa767d2f814c2d2f, type: 3}
+    - target: {fileID: 5053259974368561688, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowAudioSource
+      value: 
+      objectReference: {fileID: 1860041766}
+    - target: {fileID: 5053259974368561688, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowHitTargetSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e1f29fd30cd5ec44a94fb39abfa74218, type: 3}
+    - target: {fileID: 6287405024302458335, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowAudioSource
+      value: 
+      objectReference: {fileID: 1860041766}
+    - target: {fileID: 6287405024302458335, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowHitTargetSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e1f29fd30cd5ec44a94fb39abfa74218, type: 3}
+    - target: {fileID: 7593235498012519827, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowAudioSource
+      value: 
+      objectReference: {fileID: 1860041766}
+    - target: {fileID: 7593235498012519827, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowHitTargetSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e1f29fd30cd5ec44a94fb39abfa74218, type: 3}
+    - target: {fileID: 7902938529802951662, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowAudioSource
+      value: 
+      objectReference: {fileID: 1860041766}
+    - target: {fileID: 7902938529802951662, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowHitTargetSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e1f29fd30cd5ec44a94fb39abfa74218, type: 3}
+    - target: {fileID: 8515454900569426107, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowAudioSource
+      value: 
+      objectReference: {fileID: 1860041766}
+    - target: {fileID: 8515454900569426107, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowHitTargetSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e1f29fd30cd5ec44a94fb39abfa74218, type: 3}
+    - target: {fileID: 8595771560153077498, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowAudioSource
+      value: 
+      objectReference: {fileID: 1860041766}
+    - target: {fileID: 8595771560153077498, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowHitTargetSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e1f29fd30cd5ec44a94fb39abfa74218, type: 3}
     - target: {fileID: 8781761199302741999, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -287,6 +367,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8894083976676328737, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowAudioSource
+      value: 
+      objectReference: {fileID: 1860041766}
+    - target: {fileID: 8894083976676328737, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowHitTargetSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e1f29fd30cd5ec44a94fb39abfa74218, type: 3}
+    - target: {fileID: 9090716220763821904, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowAudioSource
+      value: 
+      objectReference: {fileID: 1860041766}
+    - target: {fileID: 9090716220763821904, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
+      propertyPath: arrowHitTargetSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e1f29fd30cd5ec44a94fb39abfa74218, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63ff3da4f8ab7684c914535dd1db8ede, type: 3}
 --- !u!1 &559037708
