@@ -2,12 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingTargetHit : MonoBehaviour
+public class PracticeTargetHit : MonoBehaviour
 {
     [SerializeField] public Material hitMaterial;
-    [SerializeField] private TargetController _targetController;
-    [SerializeField] private Scoreboard _scoreboard;
-
     [SerializeField] public Material originalMaterial;
     public Renderer renderer;
 
@@ -22,12 +19,6 @@ public class MovingTargetHit : MonoBehaviour
         if (collision.gameObject.CompareTag("Arrow"))
         {
             renderer.material = hitMaterial;
-            if (_targetController.enabled == true)
-            {
-                _scoreboard.score += 1; 
-            }
-            _targetController.enabled = false;
-            Debug.Log(_scoreboard.score);
             Invoke("TargetBackOn",6f);
         }
     }
@@ -36,6 +27,5 @@ public class MovingTargetHit : MonoBehaviour
     {
         //turns the target back on
         renderer.material = originalMaterial;
-        _targetController.enabled = true;
     }
 }
