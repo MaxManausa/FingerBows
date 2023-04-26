@@ -6,6 +6,8 @@ public class HitTarget : MonoBehaviour
     private Rigidbody targetRigidbody;
 
     [SerializeField] private Material hitMaterial;    
+    
+
     private void Start()
     {
         targetRigidbody = GetComponent<Rigidbody>();
@@ -22,4 +24,5 @@ public class HitTarget : MonoBehaviour
             Destroy(targetRigidbody.gameObject, 5f);
         }
     }
+
 }
