@@ -11,6 +11,8 @@ public class MovingTargetHit : MonoBehaviour
     [SerializeField] public Material originalMaterial;
     public Renderer renderer;
 
+    [SerializeField] private AudioSource arrowAudioSource;
+    [SerializeField] private AudioClip arrowHitSound;
     void Start()
     {
         renderer = GetComponent<Renderer>();
@@ -24,7 +26,8 @@ public class MovingTargetHit : MonoBehaviour
             renderer.material = hitMaterial;
             if (_targetController.enabled == true)
             {
-                _scoreboard.score += 1; 
+                _scoreboard.score += 1;
+                PlaySound(arrowHitSound);
             }
             _targetController.enabled = false;
             Debug.Log(_scoreboard.score);
@@ -37,5 +40,11 @@ public class MovingTargetHit : MonoBehaviour
         //turns the target back on
         renderer.material = originalMaterial;
         _targetController.enabled = true;
+    }
+    
+    private void PlaySound(AudioClip newSound)
+    {
+        newSound = arrowHitSound;
+        arrowAudioSource.Play();
     }
 }
