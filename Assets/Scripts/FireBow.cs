@@ -14,9 +14,6 @@ public class FireBow : MonoBehaviour
     [SerializeField] public GameObject fakeArrow;
     [SerializeField] public TMP_Text numberOfArrowsFired;
 
-    [SerializeField] public AudioSource arrowAudioSource;
-    [SerializeField] public AudioClip arrowWhooshSound;
-
     public float fireRate = 0.5f;
     public GameObject arrowPrefab;
     public float arrowForce = .1f;
@@ -57,22 +54,14 @@ public class FireBow : MonoBehaviour
         GameObject arrow = Instantiate(arrowPrefab, arrowSpawnPos.position, arrowSpawnPos.rotation);
         Rigidbody arrowRb = arrow.GetComponent<Rigidbody>();
         arrowRb.AddForce(arrowSpawnPos.forward * arrowForce, ForceMode.Impulse);
-        
         arrowsFired = arrowsFired + 1;
         numberOfArrowsFired.text = ("Arrows Fired: " + arrowsFired);
         Destroy(arrow, 5f);
         Debug.Log("hi!!!!!!!");
-        PlayArrowSound(arrowWhooshSound);
     }
 
     public void ReenableArrow()
     {
         fakeArrow.SetActive(true);
-    }
-
-    public void PlayArrowSound(AudioClip arrowWhooshSound)
-    {
-        arrowAudioSource.clip = arrowWhooshSound;
-        arrowAudioSource.Play();
     }
 }
