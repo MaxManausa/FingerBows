@@ -9,5 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/FingerBowScene.unity
     guid: 856d523590da72c4dab1946b5e069594
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e5630612b2c2e124c8e5dead0e5d4c3f, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 19fbd7e94acd06f4bbc9126850a0f5cb, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: fa40cb0f183204b4388dbef2d097be2b, type: 2}
