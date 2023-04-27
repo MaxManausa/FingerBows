@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using UnityEngine.XR;
 
@@ -17,6 +18,9 @@ public class FireBow : MonoBehaviour
     public float fireRate = 0.5f;
     public GameObject arrowPrefab;
     public float arrowForce = .1f;
+    
+    [SerializeField] private AudioSource arrowAudioSource;
+    [SerializeField] private AudioClip arrowWhooshSound;
     
 
     public int arrowsFired;
@@ -54,6 +58,7 @@ public class FireBow : MonoBehaviour
         GameObject arrow = Instantiate(arrowPrefab, arrowSpawnPos.position, arrowSpawnPos.rotation);
         Rigidbody arrowRb = arrow.GetComponent<Rigidbody>();
         arrowRb.AddForce(arrowSpawnPos.forward * arrowForce, ForceMode.Impulse);
+        PlaySound(arrowWhooshSound);
         arrowsFired = arrowsFired + 1;
         numberOfArrowsFired.text = ("Arrows Fired: " + arrowsFired);
         Destroy(arrow, 5f);
@@ -63,5 +68,11 @@ public class FireBow : MonoBehaviour
     public void ReenableArrow()
     {
         fakeArrow.SetActive(true);
+    }
+    
+    private void PlaySound(AudioClip newSound)
+    {
+        newSound = arrowWhooshSound;
+        arrowAudioSource.Play();
     }
 }
