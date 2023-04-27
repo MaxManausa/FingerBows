@@ -4,9 +4,6 @@ using UnityEngine;
 public class FreezeOnCollision : MonoBehaviour
 {
     private Rigidbody arrowRigidbody;
-    
-    [SerializeField] public AudioSource arrowAudioSource;
-    [SerializeField] public AudioClip arrowImpactSound;
     private void Start()
     {
         arrowRigidbody = GetComponent<Rigidbody>();
@@ -19,7 +16,6 @@ public class FreezeOnCollision : MonoBehaviour
         {
                 
             transform.SetParent(collision.transform);
-            PlayArrowSound(arrowImpactSound);
             arrowRigidbody.isKinematic = true; 
             arrowRigidbody.constraints = RigidbodyConstraints.FreezeAll;
             Debug.Log("arrow collided with" + name);
@@ -28,11 +24,5 @@ public class FreezeOnCollision : MonoBehaviour
         {
             return;
         }
-    }
-    
-    private void PlayArrowSound(AudioClip arrowImpactSound)
-    {
-        arrowAudioSource.clip = arrowImpactSound;
-        arrowAudioSource.Play();
     }
 }
