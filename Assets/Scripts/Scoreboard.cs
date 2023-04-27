@@ -18,5 +18,4 @@ public class Scoreboard : MonoBehaviour
         GetComponent<TMP_Text>().text = "Score: " + score.ToString();
     }
     
-    
 }

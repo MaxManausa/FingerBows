@@ -14,6 +14,7 @@ public class FireBow : MonoBehaviour
     [SerializeField] public Animator bowAnimation;
     [SerializeField] public GameObject fakeArrow;
     [SerializeField] public TMP_Text numberOfArrowsFired;
+    [SerializeField] private TMP_Text winArrowCount;
 
     public float fireRate = 0.5f;
     public GameObject arrowPrefab;
@@ -61,6 +62,7 @@ public class FireBow : MonoBehaviour
         PlaySound(arrowWhooshSound);
         arrowsFired = arrowsFired + 1;
         numberOfArrowsFired.text = ("Arrows Fired: " + arrowsFired);
+        winArrowCount.text = ("You hit 10 targets in the scene. It only took you " + arrowsFired + " arrows. Nice.");
         Destroy(arrow, 5f);
         Debug.Log("hi!!!!!!!");
     }
